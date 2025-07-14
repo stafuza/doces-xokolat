@@ -147,7 +147,7 @@ function finishOrder() {
     }
     
     // Criar resumo do pedido
-    let orderSummary = `PEDIDO - ${customerName}\n\n`;
+    let orderSummary = `NOME - ${customerName}\n\n`;
     orderSummary += 'PRODUTOS:\n';
     
     let hasProducts = false;
