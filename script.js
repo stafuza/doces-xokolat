@@ -179,7 +179,7 @@ function copyOrder() {
         return;
     }
     
-    let orderText = `PEDIDO - ${customerName}\n\n`;
+    let orderText = `Pedido do *${customerName}*\n\n`;
     
     products.forEach(product => {
         const qty = quantities[product.id];
