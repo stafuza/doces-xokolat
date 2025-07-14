@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comanda - Doces do Xokolat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header com Logo -->
+        <div class="header-card">
+            <div class="logo-container">
+                <img src="avatar.png" alt="Doces do Xokolat" class="logo">
+            </div>
+            <h1 class="main-title">Comanda de Pedidos</h1>
+        </div>
+
+        <!-- Campo Nome do Cliente -->
+        <div class="customer-card">
+            <label for="customer-name" class="label">Nome do Cliente</label>
+            <input 
+                type="text" 
+                id="customer-name" 
+                placeholder="Digite o nome do cliente..."
+                class="input-field"
+            >
+        </div>
+
+        <!-- Lista de Produtos -->
+        <div class="products-card">
+            <h2 class="products-title">
+                <span class="cart-icon">🛒</span>
+                Produtos
+            </h2>
+            <div class="products-list">
+                <!-- Produtos serão gerados dinamicamente pelo JavaScript -->
+            </div>
+        </div>
+
+        <!-- Total e Ações -->
+        <div class="total-card">
+            <div class="total-section">
+                <div class="total-label">Valor Total</div>
+                <div class="total-value" id="total-value">R$ 0,00</div>
+            </div>
+            
+            <div class="actions">
+                <button class="btn btn-outline" onclick="clearOrder()">
+                    Limpar Pedido
+                </button>
+                <button class="btn btn-primary" id="finish-btn" onclick="finishOrder()" disabled>
+                    Finalizar Pedido
+                </button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Doces do Xokolat</p>
+            <p>(17) 99633-3055</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
