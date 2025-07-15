@@ -179,18 +179,19 @@ function copyOrder() {
         return;
     }
     
-    let orderText = `Pedido do *${customerName}*\n\n`;
+    let orderText = '*DOCES E SALGADOS DO XOKOLAT*';
+    orderText += `\n\nPedido do(a) *${customerName}*\n`;
     
     products.forEach(product => {
         const qty = quantities[product.id];
         if (qty > 0) {
             const subtotal = qty * product.price;
-            orderText += `${qty}x ${product.name} - R$ ${subtotal.toFixed(2)}\n`;
+            orderText += `\n${qty}x ${product.name} - R$ ${subtotal.toFixed(2)}\n`;
         }
     });
     
     orderText += `\nTOTAL: R$ ${calculateTotal().toFixed(2)}`;
-    orderText += '\n\nDoces do Xokolat - 17-996333055';
+    orderText += '\n\nChave Pix: 17-996333055';
     
     // Tentar copiar para a área de transferência
     if (navigator.clipboard) {
