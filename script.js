@@ -10,6 +10,7 @@ const products = [
     { id: 'bolo_salgado', name: 'BOLO SALGADO', price: 8.00 },
     { id: 'amendoim_doce', name: 'AMENDOIM DOCE', price: 3.00 },
     { id: 'amendoim_salg', name: 'AMENDOIM SALGADO', price: 3.00 },
+    { id: 'Torresmo', name: 'TORRESMO', price: 3.00 },
     { id: 'chiclete', name: 'CHICLETE', price: 0.50 },
     { id: 'mini_trufa', name: 'MINI TRUFA (morango, côco e beijinho)', price: 3.00 },
     { id: 'salgado', name: 'SALGADO', price: 1.00 },
